@@ -29,10 +29,9 @@ const LandingSection = () => {
       comment:""
     },
     onSubmit: (values) => {
-      submit(values);
+      submit(values,values.firstName);
       if(response.type==="success"){
         onOpen(response.type,response.message);
-
       }else if(response.type==="error"){
         onOpen(response.type,response.message);
       }
