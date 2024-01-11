@@ -86,7 +86,7 @@ const Header = () => {
       right={0}
       translateY={0}
       transitionProperty="transform"
-      transitionDuration=".5s"
+      transitionDuration=".3s"
       transitionTimingFunction="ease-in-out"
       backgroundColor="#18181b"
       zIndex={999}

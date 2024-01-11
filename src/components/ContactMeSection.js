@@ -29,12 +29,12 @@ const LandingSection = () => {
       comment:""
     },
     onSubmit: (values) => {
-      submit(values,values.firstName);
-      if(response.type==="success"){
-        onOpen(response.type,response.message);
-      }else if(response.type==="error"){
-        onOpen(response.type,response.message);
-      }
+      submit("https://example.com/contect-me",values);
+      // if(response.type==="success"){
+      //   onOpen(response.type,response.message);
+      // }else if(response.type==="error"){
+      //   onOpen(response.type,response.message);
+      // }
     },
     validationSchema: Yup.object({
       firstName:Yup.string().required('Required'),
@@ -43,6 +43,15 @@ const LandingSection = () => {
       comment:Yup.string().min(25,'Must be at least 25 characters').required('Required'),
     }),
   });
+  
+  useEffect(()=>{
+    if(response){
+      onOpen(response.type,response.message);
+      if (response.type==='success') {
+        formik.resetForm();
+      }
+    }
+  },[response])
 
   return (
     <FullScreenSection
@@ -79,7 +88,7 @@ const LandingSection = () => {
               </FormControl>
               <FormControl>
                 <FormLabel htmlFor="type">Type of enquiry</FormLabel>
-                <Select id="type" name="type" {...formik.getFieldProps('type')}>
+                <Select color={"black"} id="type" name="type" {...formik.getFieldProps('type')}>
                   <option value="hireMe">Freelance project proposal</option>
                   <option value="openSource">
                     Open source consultancy session
