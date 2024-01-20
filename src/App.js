@@ -7,6 +7,9 @@ import Footer from "./components/Footer";
 import { AlertProvider } from "./context/alertContext";
 import Alert from "./components/Alert";
 
+import './tailwind.css'; // Import the generated Tailwind CSS file
+
+
 function App() {
   return (
     <ChakraProvider>
