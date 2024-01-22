@@ -2,7 +2,7 @@ import React from "react";
 import { Avatar, Heading, VStack,Image } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 // import pp from '../images/pp.jpeg';
-import profilePic from '../images/pp.jpeg'
+import profilePic from '../images/pp2.jpeg'
 
 const greeting = "Hello, I am Asadullah !";
 const bio1 = "A full-stack developer";
@@ -15,7 +15,7 @@ const LandingSection = () => (
     justifyContent="center"
     alignItems="center"
     isDarkBackground
-    backgroundColor="#c1f7e3"
+    backgroundColor="#d896ff"
   >
     <VStack spacing={6}>
       <Avatar size='2xl' src={profilePic} />

@@ -73,33 +73,37 @@ const projects = [
   {
     title: "React Space",
     description:
-      "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
-    getImageSrc: () => require("../images/photo1.jpg"),
+      "In this project, I leverage the Redux state management library to seamlessly handle cart functionality, ensuring a smooth and efficient shopping experience.Additionally, I integrate an example API to fetch product data dynamically, enabling the dynamic display of items and enhancing the overall user experience.",
+    getImageSrc: () => require("../images/cart-management.png"),
+    url: "https://asad-product-cart-management.vercel.app/"
   },
   {
     title: "React Infinite Scroll",
     description:
       "A scrollable bottom sheet with virtualisation support, native animations at 60 FPS and fully implemented in JS land 🔥️",
     getImageSrc: () => require("../images/photo2.jpg"),
+    url:"",
   },
   {
     title: "Photo Gallery",
     description:
       "A One-stop shop for photographers to share and monetize their photos, allowing them to have a second source of income",
     getImageSrc: () => require("../images/photo3.jpg"),
+    url:"",
   },
   {
     title: "Event planner",
     description:
       "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps",
     getImageSrc: () => require("../images/photo4.jpg"),
+    url:"",
   },
 ];
 
 const ProjectsSection = () => {
   return (
     <FullScreenSection
-      backgroundColor="#c1f7e3"
+      backgroundColor="#d896ff"
       isDarkBackground
       p={8}
       alignItems="flex-start"
@@ -119,6 +123,7 @@ const ProjectsSection = () => {
             title={project.title}
             description={project.description}
             imageSrc={project.getImageSrc()}
+            url={project.url}
           />
         ))}
       </Box>
