@@ -71,18 +71,18 @@ import Card from "./Card";
 
 const projects = [
   {
-    title: "React Space",
+    title: "React Cart Management",
     description:
       "In this project, I leverage the Redux state management library to seamlessly handle cart functionality, ensuring a smooth and efficient shopping experience.Additionally, I integrate an example API to fetch product data dynamically, enabling the dynamic display of items and enhancing the overall user experience.",
     getImageSrc: () => require("../images/cart-management.png"),
     url: "https://asad-product-cart-management.vercel.app/"
   },
   {
-    title: "React Infinite Scroll",
+    title: "Investment calculator",
     description:
-      "A scrollable bottom sheet with virtualisation support, native animations at 60 FPS and fully implemented in JS land 🔥️",
-    getImageSrc: () => require("../images/photo2.jpg"),
-    url:"",
+      "This React web project allows users to input their expected interest rate, desired investment duration, current savings, and yearly savings. It then calculates and displays both annual savings and annual investment based on the provided information, offering a comprehensive financial overview for users.",
+    getImageSrc: () => require("../images/investment-calc.png"),
+    url:"https://react-js-investment-calc.vercel.app/",
   },
   {
     title: "Photo Gallery",
