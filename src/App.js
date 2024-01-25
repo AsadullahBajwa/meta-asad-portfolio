@@ -8,6 +8,8 @@ import { AlertProvider } from "./context/alertContext";
 import Alert from "./components/Alert";
 
 import './tailwind.css'; // Import the generated Tailwind CSS file
+import TechnologySection from "./components/Technologies";
+import CertificateSection from "./components/CertificateSection";
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
           <Header />
           <LandingSection />
           <ProjectsSection />
+          <TechnologySection />
+          <CertificateSection/>
           <ContactMeSection />
           <Footer />
           <Alert />

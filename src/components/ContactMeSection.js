@@ -296,7 +296,7 @@ const LandingSection = () => {
         <Heading as="h1" id="contactme-section" fontSize={["2xl", "3xl", "4xl"]} fontWeight="bold"> {/* Responsive font size */}
           Contact me
         </Heading>
-        <Box p={6} rounded="md" width={["100%", "80%", "70%"]} backgroundColor="white"> {/* Responsive width */}
+        <Box p={6} rounded="md" w={[300, 400,600]} backgroundColor="white"> {/* Responsive width */}
           <form onSubmit={formik.handleSubmit}>
             <VStack spacing={4}>
               <FormControl isInvalid={formik.touched.firstName && formik.errors.firstName}>

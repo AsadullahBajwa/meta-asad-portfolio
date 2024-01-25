@@ -212,6 +212,7 @@ const Header = () => {
           py={4}
           justifyContent="space-between"
           alignItems="center"
+          spacing={4}
         >
           {/* Social media links */}
           <HStack spacing={4}>
@@ -229,6 +230,12 @@ const Header = () => {
             </a>
             <a href="/#contact-me" id="contactme" onClick={handleClick("contactme")}>
               Contact Me
+            </a>
+            <a href="/#technologies" id="technologies" onClick={handleClick("technologies")}>
+              Technology
+            </a>
+            <a href="/#certifications" id="certifications" onClick={handleClick("certifications")}>
+              Certifications
             </a>
           </HStack>
         </HStack>
