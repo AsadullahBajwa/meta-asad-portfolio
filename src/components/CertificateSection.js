@@ -2,6 +2,9 @@ import React from "react";
 import FullScreenSection from "./FullScreenSection";
 import { Box, Heading } from "@chakra-ui/react";
 import Card from "./Card";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faToolbox } from "@fortawesome/free-solid-svg-icons";
+// import { faToolbox } from "@fortawesome/free-solid-svg-icons";
 
 const projects = [
   {
@@ -51,7 +54,9 @@ const CertificateSection = () => {
         gridTemplateColumns={["repeat(1, minmax(0, 1fr))", "repeat(2, minmax(0, 1fr))"]}
         gridGap={8}
       >
-        {projects.map((project) => (
+        This section is under-construction !!
+        <FontAwesomeIcon icon={faToolbox}/>
+        {/* {projects.map((project) => (
           <Card
             key={project.title}
             title={project.title}
@@ -59,7 +64,7 @@ const CertificateSection = () => {
             imageSrc={project.getImageSrc()}
             url={project.url}
           />
-        ))}
+        ))} */}
       </Box>
     </FullScreenSection>
   );

@@ -10,6 +10,7 @@ import Alert from "./components/Alert";
 import './tailwind.css'; // Import the generated Tailwind CSS file
 import TechnologySection from "./components/Technologies";
 import CertificateSection from "./components/CertificateSection";
+import ScrollToTopArrow from "./components/ScrollToTopArrow";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <TechnologySection />
           <CertificateSection/>
           <ContactMeSection />
+          <ScrollToTopArrow/>
           <Footer />
           <Alert />
         </main>
