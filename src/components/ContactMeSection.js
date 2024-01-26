@@ -43,7 +43,7 @@
 // //       comment:Yup.string().min(25,'Must be at least 25 characters').required('Required'),
 // //     }),
 // //   });
-  
+
 // //   useEffect(()=>{
 // //     if(response){
 // //       onOpen(response.type,response.message);
@@ -160,7 +160,7 @@
 //       comment: Yup.string().min(25, 'Must be at least 25 characters').required('Required'),
 //     }),
 //   });
-  
+
 //   useEffect(() => {
 //     if (response) {
 //       onOpen(response.type, response.message);
@@ -296,8 +296,9 @@ const LandingSection = () => {
         <Heading as="h1" id="contactme-section" fontSize={["2xl", "3xl", "4xl"]} fontWeight="bold"> {/* Responsive font size */}
           Contact me
         </Heading>
-        <Box p={6} rounded="md" w={[300, 400,600]} backgroundColor="white"> {/* Responsive width */}
-          <form onSubmit={formik.handleSubmit}>
+        <Box p={6} rounded="md" w={[300, 400, 600]} backgroundColor="white"> {/* Responsive width */}
+          <form action="https://formspree.io/f/xayrqdrd"
+            method="POST">
             <VStack spacing={4}>
               <FormControl isInvalid={formik.touched.firstName && formik.errors.firstName}>
                 <FormLabel htmlFor="firstName">Name</FormLabel>
