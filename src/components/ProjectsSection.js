@@ -67,7 +67,7 @@
 import React from "react";
 import FullScreenSection from "./FullScreenSection";
 import { Box, Heading } from "@chakra-ui/react";
-import Card from "./Card";
+import Card from './Card';
 
 const projects = [
   {
@@ -75,7 +75,8 @@ const projects = [
     description:
       "In this project, I leverage the Redux state management library to seamlessly handle cart functionality, ensuring a smooth and efficient shopping experience.Additionally, I integrate an example API to fetch product data dynamically, enabling the dynamic display of items and enhancing the overall user experience.",
     getImageSrc: () => require("../images/cart-management.png"),
-    url: "https://asad-product-cart-management.vercel.app/"
+    url: "https://asad-product-cart-management.vercel.app/",
+    stack:"ReactJS",
   },
   {
     title: "Investment calculator",
@@ -83,6 +84,7 @@ const projects = [
       "This React web project allows users to input their expected interest rate, desired investment duration, current savings, and yearly savings. It then calculates and displays both annual savings and annual investment based on the provided information, offering a comprehensive financial overview for users.",
     getImageSrc: () => require("../images/investment-calc.png"),
     url:"https://react-js-investment-calc.vercel.app/",
+    stack:"ReactJS",
   },
   {
     title: "Photo Gallery",
@@ -90,6 +92,7 @@ const projects = [
       "A One-stop shop for photographers to share and monetize their photos, allowing them to have a second source of income",
     getImageSrc: () => require("../images/photo3.jpg"),
     url:"",
+    stack:"ReactJS",
   },
   {
     title: "Event planner",

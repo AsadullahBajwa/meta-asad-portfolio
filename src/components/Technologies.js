@@ -66,7 +66,7 @@ const technologies = [
 
 // TechnologyCard.js
 const TechnologyCard = ({ title, icon }) => (
-    <Box p={6} borderRadius="lg" borderWidth="1px" textAlign="center" width={{ base: '100%', md: '48%', lg: '30%' }} maxWidth="200px" mb={4}>
+    <Box p={6} borderRadius="lg" borderWidth="1px" textAlign="center" width={{ base: '100%', md: '48%', lg: '30%' }} maxWidth="200px" mb={2}>
       <FontAwesomeIcon icon={icon} size="4x" />
       <Heading as="h3" fontSize="xl" mt={3} mb={2}>
         {title}

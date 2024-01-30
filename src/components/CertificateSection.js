@@ -4,36 +4,33 @@ import { Box, Heading } from "@chakra-ui/react";
 import Card from "./Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faToolbox } from "@fortawesome/free-solid-svg-icons";
+import CertificateCard from "./CertificateCard";
 // import { faToolbox } from "@fortawesome/free-solid-svg-icons";
 
-const projects = [
+const certificates = [
   {
-    title: "React Cart Management",
+    title: "JavaScript By Meta",
     description:
-      "In this project, I leverage the Redux state management library to seamlessly handle cart functionality, ensuring a smooth and efficient shopping experience.Additionally, I integrate an example API to fetch product data dynamically, enabling the dynamic display of items and enhancing the overall user experience.",
-    getImageSrc: () => require("../images/cart-management.png"),
-    url: "https://asad-product-cart-management.vercel.app/"
+      "In This course I learned the JS from basic to advance level from the top notch devlopers of Meta known as Facebook",
+    getImageSrc: () => require("../images/JS-meta.png"),
   },
   {
-    title: "Investment calculator",
+    title: "Foundation Of Project Management by Google",
     description:
-      "This React web project allows users to input their expected interest rate, desired investment duration, current savings, and yearly savings. It then calculates and displays both annual savings and annual investment based on the provided information, offering a comprehensive financial overview for users.",
-    getImageSrc: () => require("../images/investment-calc.png"),
-    url:"https://react-js-investment-calc.vercel.app/",
+      "Course by Google",
+    getImageSrc: () => require("../images/pm-google.png"),
   },
   {
-    title: "Photo Gallery",
+    title: "Css3 by University Of Michigan",
     description:
-      "A One-stop shop for photographers to share and monetize their photos, allowing them to have a second source of income",
-    getImageSrc: () => require("../images/photo3.jpg"),
-    url:"",
+      "Core Concepts of CSS3",
+    getImageSrc: () => require("../images/css-michigan.png"),
   },
   {
-    title: "Event planner",
+    title: "Docker For Beginners",
     description:
-      "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps",
-    getImageSrc: () => require("../images/photo4.jpg"),
-    url:"",
+      "A guided project by Coursera",
+    getImageSrc: () => require("../images/Docker-certi.png"),
   },
 ];
 
@@ -49,23 +46,15 @@ const CertificateSection = () => {
       <Heading as="h1" id="certifications-section">
         Certifications
       </Heading>
-      <Box
-        display="grid"
-        gridTemplateColumns={["repeat(1, minmax(0, 1fr))", "repeat(2, minmax(0, 1fr))"]}
-        gridGap={8}
-      >
-        This section is under-construction !!
-        <FontAwesomeIcon icon={faToolbox}/>
-        {/* {projects.map((project) => (
-          <Card
-            key={project.title}
-            title={project.title}
-            description={project.description}
-            imageSrc={project.getImageSrc()}
-            url={project.url}
-          />
-        ))} */}
-      </Box>
+      {certificates.map((project) => (
+        <CertificateCard
+          key={project.title}
+          title={project.title}
+          description={project.description}
+          imageSrc={project.getImageSrc()}
+          // url={project.url}
+        />
+      ))}
     </FullScreenSection>
   );
 };
