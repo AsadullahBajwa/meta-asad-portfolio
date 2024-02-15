@@ -66,7 +66,7 @@ const technologies = [
 
 // TechnologyCard.js
 const TechnologyCard = ({ title, icon }) => (
-    <Box p={6} borderRadius="lg" borderWidth="1px" textAlign="center" width={{ base: '100%', md: '48%', lg: '30%' }} maxWidth="200px" mb={2}>
+    <Box p={6} borderRadius="lg" borderWidth="1px" textAlign="center" width={{ base: '100%', md: '48%', lg: '30%' }} maxWidth="200px" m={2}>
       <FontAwesomeIcon icon={icon} size="4x" />
       <Heading as="h3" fontSize="xl" mt={3} mb={2}>
         {title}
@@ -83,14 +83,15 @@ const TechnologySection = () => {
       isDarkBackground
       p={8}
       alignItems="flex-start"
-      spacing={8}
+      // justifyContent="center"
+      // spacing={16}
     >
       <Heading as="h1" id="technologies-section">
-        Technologies
+        Expertise
       </Heading>
       <Flex
         flexWrap="wrap"
-        justifyContent="space-between"
+        justifyContent="center"
       >
         {technologies.map((tech) => (
           <TechnologyCard

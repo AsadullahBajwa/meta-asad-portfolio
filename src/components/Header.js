@@ -215,7 +215,7 @@ const Header = () => {
           spacing={4}
         >
           {/* Social media links */}
-          <HStack spacing={4}>
+          <HStack spacing={[16,8,4]}>
             {socials.map((link, index) => (
               <a href={link.url} target="_blank" key={index}>
                 <FontAwesomeIcon icon={link.icon} size="2x" />
@@ -224,7 +224,7 @@ const Header = () => {
           </HStack>
 
           {/* Navigation links */}
-          <HStack spacing={4}>
+          <HStack spacing={8}>
             <a href="/#projects" id="projects" onClick={handleClick("projects")}>
               Projects
             </a>
@@ -232,7 +232,7 @@ const Header = () => {
               Contact Me
             </a>
             <a href="/#technologies" id="technologies" onClick={handleClick("technologies")}>
-              Technology
+              Expertise
             </a>
             <a href="/#certifications" id="certifications" onClick={handleClick("certifications")}>
               Certifications

@@ -296,7 +296,7 @@ const LandingSection = () => {
         <Heading as="h1" id="contactme-section" fontSize={["2xl", "3xl", "4xl"]} fontWeight="bold"> {/* Responsive font size */}
           Contact me
         </Heading>
-        <Box p={6} rounded="md" w={[300, 400, 600]} backgroundColor="white"> {/* Responsive width */}
+        <Box p={6} rounded="md" w={[300, 400, 750]} backgroundColor="white"> {/* Responsive width */}
           <form action="https://formspree.io/f/xayrqdrd"
             method="POST">
             <VStack spacing={4}>
