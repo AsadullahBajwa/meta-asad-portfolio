@@ -1,9 +1,11 @@
-import React from "react";
+import React,{useEffect} from "react";
 import FullScreenSection from "./FullScreenSection";
 import { Box, Heading, Flex, Text } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact, faHtml5, faCss3, faJs, faNodeJs, faPhp, faPython, faWordpress, faWix, faElementor, faJava } from "@fortawesome/free-brands-svg-icons";
 import { faTeletype } from "@fortawesome/free-solid-svg-icons";
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 const technologies = [
   {
@@ -66,7 +68,7 @@ const technologies = [
 
 // TechnologyCard.js
 const TechnologyCard = ({ title, icon }) => (
-    <Box p={6} borderRadius="lg" borderWidth="1px" textAlign="center" width={{ base: '100%', md: '48%', lg: '30%' }} maxWidth="200px" m={2}>
+    <Box data-aos="flip-right" p={6} borderRadius="lg" borderWidth="1px" textAlign="center" width={{ base: '100%', md: '48%', lg: '30%' }} maxWidth="200px" m={2}>
       <FontAwesomeIcon icon={icon} size="4x" />
       <Heading as="h3" fontSize="xl" mt={3} mb={2}>
         {title}
@@ -77,6 +79,9 @@ const TechnologyCard = ({ title, icon }) => (
   
 
 const TechnologySection = () => {
+  useEffect(()=>{
+    Aos.init()
+  },[])
   return (
     <FullScreenSection
       backgroundColor="#d896ff"
