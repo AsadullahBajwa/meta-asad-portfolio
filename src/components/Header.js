@@ -85,7 +85,7 @@ const Header = () => {
           py={4}
           justifyContent="space-between"
           alignItems="center"
-          spacing={8}
+          spacing={16}
         >
           {/* Social media links */}
           <HStack spacing={[16,8,4]}>

@@ -30,13 +30,13 @@ const LandingSection = () => (
     isDarkBackground
     backgroundColor="#d896ff"
   >
-    <Stack direction={["column-reverse","row"]} spacing={32} align={"center"}>
+    <Stack direction={["column-reverse","row"]} spacing={[8,32]} align={"center"}>
         <VStack>
           <Heading as='h4' size='md'>{greeting}</Heading><br />
           <Heading as='h3' size='2xl'>{bio1}</Heading>
           <Heading as='h3' size='xl'>{bio2}</Heading>
         </VStack>
-        <Image boxSize={[300,450]} objectFit='cover' borderRadius="full" src={profilePic} mb="20px"/>
+        <Image boxSize={[290,450]} objectFit='cover' borderRadius="full" src={profilePic} mt="50px"/>
     </Stack>
   </FullScreenSection>
 );
