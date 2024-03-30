@@ -2,7 +2,7 @@ import React from "react";
 import { Avatar, Heading, HStack, VStack, Image, Center, useBreakpointValue, Stack } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 // import pp from '../images/pp.jpeg';
-import profilePic from '../images/bw foto.png'
+import profilePic from '../images/profile pic.jpg'
 // import { useBreakpointValue } from "@chakra-ui/react";
 
 const greeting = "Hello, I am Asadullah !";
