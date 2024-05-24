@@ -6,7 +6,7 @@ import CertificateCard from "./CertificateCard";
 
 const certificates = [
   {
-    title: "Advance React By Meta ( This Portfolio website was the project of this course )",
+    title: "Advance React By Meta",
     description:
       "I completed the Advanced React course on Coursera, which is part of the Meta Front-End Developer Professional Certificate1. In this course, I learned how to use more advanced React concepts and features, such as Creating robust and reusable components with hooks, forms, and composition techniques Fetching and posting data from a remote server using an API Testing React applications with React Testing Library Integrating commonly used React libraries and tools",
     getImageSrc: () => require("../images/reactjs-adv-meta.png"),
