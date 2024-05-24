@@ -51,7 +51,7 @@ const LandingSection = () => {
   return (
     <FullScreenSection
       isDarkBackground
-      backgroundColor="#d896ff"
+      backgroundColor="#ced3d4"
       py={[8, 12, 16]} // Responsive padding
       spacing={[4, 6, 8]} // Responsive spacing
     >

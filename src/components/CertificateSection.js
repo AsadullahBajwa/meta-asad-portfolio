@@ -46,7 +46,7 @@ const certificates = [
 const CertificateSection = () => {
   return (
     <FullScreenSection
-      backgroundColor="#d896ff"
+      backgroundColor="#ced3d4"
       isDarkBackground
       p={8}
       alignItems="flex-start"

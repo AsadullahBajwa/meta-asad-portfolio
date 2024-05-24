@@ -84,7 +84,7 @@ const TechnologySection = () => {
   },[])
   return (
     <FullScreenSection
-      backgroundColor="#d896ff"
+      backgroundColor="#ced3d4"
       isDarkBackground
       p={8}
       alignItems="flex-start"

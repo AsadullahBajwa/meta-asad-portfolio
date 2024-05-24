@@ -7,12 +7,12 @@ import { VStack } from "@chakra-ui/react";
 const FullScreenSection = ({ children, isDarkBackground, ...boxProps }) => {
   return (
     <VStack
-      backgroundColor={boxProps.backgroundColor}
+      backgroundColor="#ced3d4"
       color={isDarkBackground ? "#333333" : "black"}
     >
       <VStack
         maxWidth="90%" // Responsive max width
-        minHeight="100vh"
+        // minHeight="100vh"
         padding={[4, 8, 12]} // Responsive padding
         {...boxProps}
       >
