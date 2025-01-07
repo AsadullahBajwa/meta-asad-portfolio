@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import FullScreenSection from "./FullScreenSection";
-import profilePic from "../images/ai pp (2).jpg";
+import profilePic from "../images/Berlin-Gate-Pic-pp.jpeg";
 
 const greeting = "Hello, I am Asadullah !";
 const bio1 = "A full-stack developer";
